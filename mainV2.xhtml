@@ -1,0 +1,809 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="en-au" http-equiv="Content-Language" />
+	<title>Operational Planning System</title>
+	<link rel="stylesheet" type="text/css" href="mainV2.css" />
+	<link rel="stylesheet" type="text/javascript" href="main.js" />
+</head>
+
+
+<body>
+<div class="wrap">
+	<form id="frmMain">
+    	<span class="mainStyle">
+        	School/Unit: <label id="lblUnit" value = ""/>
+            <br /><br />
+        	Operational Plan 2012 - 2016 
+            <br /><br />
+        	Year of Operation 1 - 2012
+            <br /><br />
+        </span>
+    </form>
+    
+    <form id="frmBudget">
+   	<div id="budgetWrap">
+    	<span class="subTitle">Plan Summary and Introduction:</span>
+        <br /><br />
+        <textarea id="txtPlanSum" class="txtArea"></textarea>
+        <br /><br /><br /><br />
+        <span class="subTitle">
+        	The main strategic directions for the School\Office to develop Specific Operational Objectives (KPI) are:
+        </span>
+        <br /><br />
+        <textarea id="txtMainStrag" class="txtArea"></textarea>
+        <br /><br /><br /><br /><br /><br />
+        
+        <span class="subTitle">Buget Performance <span>(all funds)</span></span>
+        <hr />
+        <table border="1">
+        	<tr>
+            	<th width="187px"><span class="tblBold">$m</span></th>
+                <th width="177px"><span class="tblBold">2011 <br /><br />Budget</span></th>
+                <th width="177px"><span class="tblBold">2010 <br /><br />Actual</span></th>
+                <th width="177px"><span class="tblBold">2009 <br /><br />Actual</span></th>
+                <th width="177px"><span class="tblBold">2008 <br /><br />Actual</span></th>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">Revenue</span></td>
+                <td><input class="tbox" type="text" id="bPerform11Revenue" /></td>
+                <td><input class="tbox" type="text" id="bPerform10Revenue" /></td>
+                <td><input class="tbox" type="text" id="bPerform09Revenue" /></td>
+                <td><input class="tbox" type="text" id="bPerform08Revenue" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">Expenses</span></td>
+                <td><input class="tbox" type="text" id="bPerform11Expenses" /></td>
+                <td><input class="tbox" type="text" id="bPerform10Expenses" /></td>
+                <td><input class="tbox" type="text" id="bPerform09Expenses" /></td>
+                <td><input class="tbox" type="text" id="bPerform08Expenses" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">Net Surplus/(Deficit)</span></td>
+                <td><input class="tbox" type="text" id="bPerform11Net" /></td>
+                <td><input class="tbox" type="text" id="bPerform10Net" /></td>
+                <td><input class="tbox" type="text" id="bPerform09Net" /></td>
+                <td><input class="tbox" type="text" id="bPerform08Net" /></td>
+            </tr>
+        </table>
+        <br /><br />
+        
+        <hr />
+        <span class="subTitle">Staff FTE</span>
+        <hr />
+        <table border="1">
+        	<tr>
+            	<th width="187px"><span class="tblBold">No.</span></th>
+                <th width="177px"><span class="tblBold">2011 <br /><br />Budget</span></th>
+                <th width="177px"><span class="tblBold">2010 <br /><br />Actual</span></th>
+                <th width="177px"><span class="tblBold">2009 <br /><br />Actual</span></th>
+                <th width="177px"><span class="tblBold">2008 <br /><br />Actual</span></th>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">Academic</span></td>
+                <td><input class="tbox" type="text" id="staff11Academic" /></td>
+                <td><input class="tbox" type="text" id="staff10Academic" /></td>
+                <td><input class="tbox" type="text" id="staff09Academic" /></td>
+                <td><input class="tbox" type="text" id="staff08Academic" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">General</span></td>
+                <td><input class="tbox" type="text" id="staff11General" /></td>
+                <td><input class="tbox" type="text" id="staff10General" /></td>
+                <td><input class="tbox" type="text" id="staff09General" /></td>
+                <td><input class="tbox" type="text" id="staff08General" /></td>
+            </tr>
+        </table>
+        <br /><br />
+        
+        <hr />
+        <span class="subTitle">Taught Load (where applicable)</span>
+        <hr />
+        <table border="1">
+        	<tr>
+            	<th width="187px"><span class="tblBold">No. EFTSL</span></th>
+                <th width="177px"><span class="tblBold">2011 <br /><br />Budget</span></th>
+                <th width="177px"><span class="tblBold">2010 <br /><br />Actual</span></th>
+                <th width="177px"><span class="tblBold">2009 <br /><br />Actual</span></th>
+                <th width="177px"><span class="tblBold">2008 <br /><br />Actual</span></th>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">CGS</span></td>
+                <td><input class="tbox" type="text" id="taught11CGS" /></td>
+                <td><input class="tbox" type="text" id="taught10CGS" /></td>
+                <td><input class="tbox" type="text" id="taught09CGS" /></td>
+                <td><input class="tbox" type="text" id="taught08CGS" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">International onshore</span></td>
+                <td><input class="tbox" type="text" id="taught11Onshore" /></td>
+                <td><input class="tbox" type="text" id="taught10Onshore" /></td>
+                <td><input class="tbox" type="text" id="taught09Onshore" /></td>
+                <td><input class="tbox" type="text" id="taught08Onshore" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">International offshore</span></td>
+                <td><input class="tbox" type="text" id="taught11Offshore" /></td>
+                <td><input class="tbox" type="text" id="taught10Offshore" /></td>
+                <td><input class="tbox" type="text" id="taught09Offshore" /></td>
+                <td><input class="tbox" type="text" id="taught08Offshore" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">Domestic Postgraduate Coursework</span></td>
+                <td><input class="tbox" type="text" id="taught11Domestic" /></td>
+                <td><input class="tbox" type="text" id="taught10Domestic" /></td>
+                <td><input class="tbox" type="text" id="taught09Domestic" /></td>
+                <td><input class="tbox" type="text" id="taught08Domestic" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">HDR</span></td>
+                <td><input class="tbox" type="text" id="taught11HDR" /></td>
+                <td><input class="tbox" type="text" id="taught10HDR" /></td>
+                <td><input class="tbox" type="text" id="taught09HDR" /></td>
+                <td><input class="tbox" type="text" id="taught08HDR" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">Total</span></td>
+                <td><input class="tbox" type="text" id="taught11Total" /></td>
+                <td><input class="tbox" type="text" id="taught10Total" /></td>
+                <td><input class="tbox" type="text" id="taught09Total" /></td>
+                <td><input class="tbox" type="text" id="taught08Total" /></td>
+            </tr>
+        </table>
+        <br /><br />
+        
+        <hr />
+        <span class="subTitle">Admit Load (where applicable)</span>
+        <hr />
+        <table border="1">
+        	<tr>
+            	<th width="187px"><span class="tblBold">No. EFTSL</span></th>
+                <th width="177px"><span class="tblBold">2011 <br /><br />Budget</span></th>
+                <th width="177px"><span class="tblBold">2010 <br /><br />Actual</span></th>
+                <th width="177px"><span class="tblBold">2009 <br /><br />Actual</span></th>
+                <th width="177px"><span class="tblBold">2008 <br /><br />Actual</span></th>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">CGS</span></td>
+                <td><input class="tbox" type="text" id="admit11CGS" /></td>
+                <td><input class="tbox" type="text" id="admit10CGS" /></td>
+                <td><input class="tbox" type="text" id="admit09CGS" /></td>
+                <td><input class="tbox" type="text" id="admit08CGS" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">International onshore</span></td>
+                <td><input class="tbox" type="text" id="admit11Onshore" /></td>
+                <td><input class="tbox" type="text" id="admit10Onshore" /></td>
+                <td><input class="tbox" type="text" id="admit09Onshore" /></td>
+                <td><input class="tbox" type="text" id="admit08Onshore" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">International offshore</span></td>
+                <td><input class="tbox" type="text" id="admit11Offshore" /></td>
+                <td><input class="tbox" type="text" id="admit10Offshore" /></td>
+                <td><input class="tbox" type="text" id="admit09Offshore" /></td>
+                <td><input class="tbox" type="text" id="admit08Offshore" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">Domestic Postgraduate Coursework</span></td>
+                <td><input class="tbox" type="text" id="admit11Domestic" /></td>
+                <td><input class="tbox" type="text" id="admit10Domestic" /></td>
+                <td><input class="tbox" type="text" id="admit09Domestic" /></td>
+                <td><input class="tbox" type="text" id="admit08Domestic" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">HDR</span></td>
+                <td><input class="tbox" type="text" id="admit11HDR" /></td>
+                <td><input class="tbox" type="text" id="admit10HDR" /></td>
+                <td><input class="tbox" type="text" id="admit09HDR" /></td>
+                <td><input class="tbox" type="text" id="admit08HDR" /></td>
+            </tr>
+            
+            <tr>
+            	<td><span class="tblBold">Total</span></td>
+                <td><input class="tbox" type="text" id="admit11Total" /></td>
+                <td><input class="tbox" type="text" id="admit10Total" /></td>
+                <td><input class="tbox" type="text" id="admit09Total" /></td>
+                <td><input class="tbox" type="text" id="admit08Total" /></td>
+            </tr>
+        </table>
+        <br /><br />
+    </div>
+    </form>
+    
+    <form id="frmCenterSupport">
+    <div id="agreementWrap">
+    	<table border="1">
+        	<tr>
+            	<td colspan="2">
+                	<span class="subTitle">Service Level Agreement (for Central Support Offices only)</span>
+                </td>
+            </tr>
+            
+            <tr>
+            	<td colspan="2">
+                	<table>
+                    	<tr>
+                        	<td>
+                            	<span class="tblBold">(a) Outline the key service areas for which the Central Support Office is responsible.</span>
+                                <br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>
+                            	<textarea id="outlineService" class="txtArea"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr>
+            	<td colspan="2">
+                	<span class="tblBold">
+                    	(b) For each of the key service areas provide the agreed service standard that customers can expect for that particular activity
+                    </span>
+                </td>
+            </tr>
+            
+            <tr>
+            	<td>
+                	<span class="tblBold">Key Service Area</span>
+                </td>
+                <td>
+                	<span class="tblBold">Agreed Service Standard</span>
+                </td>
+            </tr>
+            
+            <tr>
+            	<td>
+                	<textarea id="keyService" class="txtAreaSmall"></textarea>
+                </td>
+                <td>
+                	<textarea id="agreedService" class="txtAreaSmall"></textarea>
+                </td>
+            </tr>
+        </table>
+        <br /><br /><br />
+    </div>
+    </form>
+    
+    <form id="frmOP">
+    <div id="OPWrap">
+    	<table border="1">
+        	<tr>
+            	<td colspan="11">
+            		<span class="OPHead1">Murdoch University Strategic Plan 2010 - 2015</span><br />
+                	<span class="OPHead2"><label id="lblSchoolUnit" value="" />Operational Plan 2012 - 2016</span>
+                </td>
+            </tr>
+            
+            <tr>
+            	<td colspan="2" rowspan="2">
+                	<span class="mainStyle">OPERATIONAL OBJECTIVES (KPIs)</span>
+                </td>
+                <td rowspan="2">
+                	<span>Baseline at start of Op. Plan</span>
+                </td>
+                <td rowspan="2">
+                	<span class="mainStyle">ACTIONS</span><br /><br />
+                    <span>[Include responsibility and allocation to budget.]</span>
+                </td>
+                <td rowspan="2">
+                	<span>2010-15 Strategic Plan Reference</span>
+                </td>
+                <td colspan="5">
+                	<span class="mainStyle">PLANNED TARGET</span><br /><br />
+                    <span>
+                    	[3- year rolling planning cycle. Timeline may be used to indicate either year planned to achieve target, or the stepwise 
+                        achievement of target. Each year targets are reviewed against actuals and future targets revised.]
+                    </span>
+                </td>
+                <td rowspan="2">
+                	<span class="mainStyle">REPORTING OUTCOME</span><br />
+                    <span>[6 monthly]</span>
+                </td>
+            </tr>
+            
+            <tr>
+            	<td>
+                	<span>Year 1</span>
+                </td>
+                <td>
+                	<span>Year 2</span>
+                </td>
+                <td>
+                	<span>Year 3</span>
+                </td>
+                <td>
+                	<span>Year 4</span>
+                </td>
+                <td>
+                	<span>Year 5</span>
+                </td>
+            </tr>
+            
+            <tr>
+            	<td rowspan="11">
+                	<span>Long term, beyond current Strategic Plan</span>
+                </td>
+                <td>
+                	<span class="subTitle">Base</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">[Budget]</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseBudget" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBudgetActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBudgetReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBudgetY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBudgetY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBudgetY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBudgetY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBudgetY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBudgetReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">[Staff Engagement]</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseStaff" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPStaffActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPStaffReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPStaffY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPStaffY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPStaffY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPStaffY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPStaffY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPStaffReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">[Diversity, Safety and Wellbeing]</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseDiversity" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPDiversityActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPDiversityReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPDiversityY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPDiversityY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPDiversityY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPDiversityY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPDiversityY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPDiversityReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle">Generic-AOU</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">[Teaching quality x 3]</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseTeaching" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPTeachingActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPTeachingReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPTeachingY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPTeachingY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPTeachingY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPTeachingY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPTeachingY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPTeachingReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">[Research activity/quality x 4]</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseResearch" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPResearchActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPResearchReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPResearchY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPResearchY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPResearchY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPResearchY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPResearchY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPResearchReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">[Load]</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseLoad" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPLoadActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPLoadReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPLoadY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPLoadY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPLoadY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPLoadY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPLoadY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPLoadReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">[Income generation]</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseIncome" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPIncomeActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPIncomeReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPIncomeY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPIncomeY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPIncomeY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPIncomeY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPIncomeY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPIncomeReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle">Generic-CSO</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">[Customer Satisfaction]</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseCustomer" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReport" />
+                </td>
+            </tr>
+            
+            <tr>
+            	<td rowspan="11">
+                	<span>Linked to Strat.</span>
+                </td>
+                <td>
+                	<span class="subTitle">Specific</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">xx</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseCustomer" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">xx</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseCustomer" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">xx</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseCustomer" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReport" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                	<span class="subTitle2">xx</span>
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPBaseCustomer" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerActions" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReference" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY1" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY2" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY3" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY4" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerY5" />
+                </td>
+                <td>
+                	<input class="tbox" type="text" id="OPCustomerReport" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</div>
+</body>
+</html>
